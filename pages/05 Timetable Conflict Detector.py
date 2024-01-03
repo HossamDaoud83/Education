@@ -52,8 +52,9 @@ def process_file(uploaded_file):
 # Streamlit app
 st.title('Course Timetable Conflict Detector')
 
-# 
-st.markdown(f"Redirecting to ["Download Example"]("https://docs.google.com/spreadsheets/d/1uvmsb1ivFgIh2oC6oHLA9yalfyTrsdrR/edit?usp=sharing&ouid=113847241366072233997&rtpof=true&sd=true")")
+# Download Example File
+link = "https://docs.google.com/spreadsheets/d/1uvmsb1ivFgIh2oC6oHLA9yalfyTrsdrR/edit?usp=sharing&ouid=113847241366072233997&rtpof=true&sd=true"
+st.markdown(f"[Download Example]({link})", unsafe_allow_html=True)
 
 # File uploader
 uploaded_file = st.file_uploader("Choose a file", type=['xlsx'])
